@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Audio">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="36dp"
+            android:text="Music Volume"
+            app:layout_constraintEnd_toStartOf="@+id/musicVolume"
+            app:layout_constraintTop_toBottomOf="@+id/voiText" />
+
+        <TextView
+            android:id="@+id/voiText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="32dp"
+            android:text="Voices Volume"
+            app:layout_constraintEnd_toStartOf="@+id/voicesVolume"
+            app:layout_constraintTop_toBottomOf="@+id/effText" />
+
+        <TextView
+            android:id="@+id/effText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:text="Effects Volume"
+            app:layout_constraintEnd_toStartOf="@+id/effectsVolume"
+            app:layout_constraintTop_toBottomOf="@+id/genText" />
+
+        <TextView
+            android:id="@+id/genText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:layout_marginEnd="32dp"
+            android:text="General Volume"
+            app:layout_constraintEnd_toStartOf="@+id/generalVolume"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/subBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="156dp"
+            android:text="Subtitle Background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fontSize" />
+
+        <Spinner
+            android:id="@+id/fontSize"
+            android:layout_width="343dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/musicVolume" />
+
+        <SeekBar
+            android:id="@+id/musicVolume"
+            android:layout_width="246dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/voicesVolume" />
+
+        <SeekBar
+            android:id="@+id/voicesVolume"
+            android:layout_width="246dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/effectsVolume" />
+
+        <SeekBar
+            android:id="@+id/effectsVolume"
+            android:layout_width="246dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/generalVolume" />
+
+        <SeekBar
+            android:id="@+id/generalVolume"
+            android:layout_width="246dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="76dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
